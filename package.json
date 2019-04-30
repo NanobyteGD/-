@@ -1,0 +1,20 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "서벌(복사본)",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "@types/node": "^11.13.8",
+    "discord.js": "^11.4.2",
+    "express": "^4.16.4",
+    "get-youtube-id": "^1.0.1",
+    "get-youtube-title": "^1.0.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
+    "opusscript": "0.0.6",
+    "ytdl-core": "^0.29.1"
+  }
+}
