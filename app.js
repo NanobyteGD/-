@@ -16,7 +16,7 @@ var res;
 var logs = new Array();
 function play(connection, msg) {
     var server = servers[msg.guild.id];
-    var streamOptions = { seek: 1, volume: 1 };
+    var streamOptions = { seek: 0, volume: 1 };
     var stream = YTDL(server.queue[0], { filter: 'audioonly' });
     server.dispatcher = connection.playStream(stream, streamOptions);
     server.queue.shift();
@@ -103,33 +103,6 @@ app.get("/", function (req, res) {
 app.listen(3000);
 bot.login(TOKEN);
 //삭제된 명령어들
-//1. 빙의
-/*
-    case "빙의":
-            //msg.channel.bulkDelete(1);
-            var parse_length = "젠순아 빙의<@379908900884840449>";
-            var member = msg.mentions.users.first();
-            var options = {
-                url: 'https://discordapp.com/api/webhooks/569403438153072651/LEQIyPo7Cf5W1nMMbc6PB3erT4QQGPFfpRme2EoSrGntlqihwbRiGKD22NE7ZPYT542F',
-                method: 'POST',
-                form: {
-                    'username': member.username,
-                    'avatar_url': member.avatarURL,
-                    'content': msg.content.substring(parse_length.length + 2)
-                }
-            }
-            request(options, function (err, response, body) {
-                //callback
-            });
-            msg.delete(1);
-                break;
- */
-//2. 끼야!
-/*
-        case "끼야!":
-            msg.channel.send("아몰랑~");
-            break;
-*/
 /*
 case "큐":
             var server = servers[msg.guild.id];
