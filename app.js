@@ -52,6 +52,7 @@ bot.on("message", function (msg) {
             }
             if (!YTDL.validateURL(args[2])) {
                 msg.channel.send("올바른 유튜브 영상 주소가 아닌거같은데");
+                return;
             }
             if (!servers[msg.guild.id])
                 servers[msg.guild.id] = {
