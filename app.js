@@ -1,7 +1,7 @@
 var Discord = require("discord.js");
 var bot = new Discord.Client();
 var TOKEN = "NTcyNjY4MTI1NjU3Njk0MjIw.XMgKmQ.F8adNi9CDcNgnR2Kp_PRHrON2Kg";
-var PREFIX = "서벌";
+var PREFIX = "!서벌";
 var getYouTubeID = require('get-youtube-id');
 var getYoutubeTitle = require('get-youtube-title');
 var YTDL = require("ytdl-core");
